@@ -1,6 +1,6 @@
 const configExpress = require("./config/configExpress");
-const connection = require("./db/connection");
-const Tabelas = require("./db/Tabelas");
+const connection = require("./infra/connection");
+const Tables = require("./infra/Tables");
 
 const PORT = process.env.PORT || 3333;
 
@@ -9,7 +9,7 @@ const app = configExpress();
 connection.connect((error) => {
   if (error) throw error;
 
-  Tabelas.init(connection);
+  Tables.init(connection);
 
   app.listen(PORT, () => {
     console.info("\n\033[36m[running] on http://localhost:" + PORT);

@@ -6,7 +6,7 @@ module.exports = () => {
 
   app.use(express.json());
 
-  consign({ cwd: "src" }).include("routes.js").include("controllers").into(app);
+  consign({ cwd: "src" }).include("routes.js").into(app);
 
   return app;
 };
