@@ -68,7 +68,7 @@ class Scheduling {
 
       return res.status(201).json({
         success: true,
-        agendamento: {
+        scheduling: {
           id: results.insertId,
           ...schedulingWithDates,
         },
@@ -84,7 +84,7 @@ class Scheduling {
     if (scheduling.service_date)
       moment(scheduling.service_date).format("YYYY-MM-DD");
 
-    connection.query(sql, scheduling, id, (error, results) => {
+    connection.query(sql, [scheduling, id], (error, results) => {
       if (error) return res.status(400).json(error);
       if (results.affectedRows === 0)
         return res.status(400).json({
@@ -94,7 +94,8 @@ class Scheduling {
 
       return res.status(202).json({
         success: true,
-        agendamento: { id, ...scheduling },
+        message: `Agendamento com id ${id} alterado com sucesso`,
+        service_date: scheduling.service_date,
       });
     });
   }
