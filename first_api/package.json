@@ -1,0 +1,23 @@
+{
+  "name": "afrodev_api",
+  "version": "1.0.0",
+  "description": "Developed in NodeJS API developed during Venturus by ShareRH AfroDev Acceleration",
+  "main": "src/index.js",
+  "repository": "https://www.github.com/williamjesusdev/AfroDev_API.git",
+  "author": "William Jesus <williamjesusti@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "debug": "nodemon --inspect src/index.js"
+  },
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "private": true
+}
