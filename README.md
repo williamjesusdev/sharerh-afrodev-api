@@ -2,6 +2,12 @@
 REST API NodeJS desenvolvida durante a Aceleração AfroDev da Venturus by ShareRH. 
 API de Agendamentos, com endpoints para inclusão, alteração, exclusão e listagem.
 
+## Versões do Projeto
++ [Primeira versão da API](./first_api) - Desenvolvida com a bibliteca mysql executando **SQL QUERY** diretamente na aplicação.
+
+## Clonando o Projeto
+Para executar qualquer uma das versões da API é só clonar o projeto e dentro do diretório e executar os seguintes comandos.
+
 ## Instalação
 
     yarn install ou npm install
@@ -20,7 +26,8 @@ Exemplos de requisições e respostas dos endpoints utilizando [Insomnia](https:
 
 `GET /agendamentos`
 
-    GET http://localhost:3333/agendamentos
+    #EXEMPLO
+    http://localhost:3333/agendamentos
 
 ### Resposta
 
@@ -53,7 +60,8 @@ Exemplos de requisições e respostas dos endpoints utilizando [Insomnia](https:
 
 `GET /agendamentos/:id`
 
-    GET http://localhost:3333/agendamentos/1
+    #EXEMPLO
+    http://localhost:3333/agendamentos/1
 
 ### Resposta
 
@@ -83,7 +91,8 @@ Exemplos de requisições e respostas dos endpoints utilizando [Insomnia](https:
 ### Requisição
 
 `POST /agendamentos`
-
+    
+    #EXEMPLO
     POST http://localhost:3333/agendamentos
     BODY: Content-Type = application/json
     { 
@@ -122,6 +131,7 @@ Exemplos de requisições e respostas dos endpoints utilizando [Insomnia](https:
 
 `GET /agendamentos/id`
 
+    #EXEMPLO
     GET http://localhost:3333/agendamentos/10
 
 ### Resposta
@@ -146,6 +156,7 @@ Exemplos de requisições e respostas dos endpoints utilizando [Insomnia](https:
 
 `PUT /agendamentos/:id`
 
+    #EXEMPLO
     PUT http://localhost:3333/agendamentos/2
     BODY: Content-Type = application/json
     { 
@@ -175,6 +186,7 @@ Exemplos de requisições e respostas dos endpoints utilizando [Insomnia](https:
 
 `DELETE /agendamentos/id`
 
+    #EXEMPLO
     DELETE http://localhost:3333/agendamentos/2
 
 ### Resposta
@@ -200,6 +212,7 @@ Exemplos de requisições e respostas dos endpoints utilizando [Insomnia](https:
 
 `DELETE /agendamentos/id`
 
+    #EXEMPLO
     DELETE http://localhost:3333/agendamentos/2
 
 ### Resposta
