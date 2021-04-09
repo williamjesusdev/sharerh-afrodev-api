@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: "Agendamento",
+
+      timestamps: true,
+      createdAt: "data_criacao",
+      updatedAt: "data_atualizacao",
     }
   );
   return Agendamento;

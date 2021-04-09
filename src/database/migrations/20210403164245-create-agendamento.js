@@ -18,6 +18,13 @@ module.exports = {
             len: [5, 50],
           },
         },
+        nome_servico: {
+          type: Sequelize.STRING,
+          allowNull: false,
+          validate: {
+            len: [5, 50],
+          },
+        },
         status: {
           type: Sequelize.ENUM("agendado", "cancelado"),
           allowNull: false,
