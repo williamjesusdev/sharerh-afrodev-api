@@ -2,9 +2,6 @@
 REST API NodeJS desenvolvida durante a Aceleração AfroDev da Venturus by ShareRH. 
 API de Agendamentos, com endpoints para inclusão, alteração, exclusão e listagem.
 
-## Versões do Projeto
-+ [Primeira versão da API](./first_api) - Desenvolvida com a bibliteca mysql executando **SQL QUERY** diretamente na aplicação.
-
 ## Clonando o Projeto
 Para executar qualquer uma das versões da API é só clonar o projeto e dentro do diretório e executar os seguintes comandos.
 
