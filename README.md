@@ -4,6 +4,7 @@ API de Agendamentos, com endpoints para inclusão, alteração, exclusão e list
 
 ## Versões do Projeto
 + [Primeira versão da API](./first_api) - Desenvolvida com a bibliteca mysql executando **SQL QUERY** diretamente na aplicação.
++ [Segunda versão da API](./second_api) - Desenvolvida com a bibliteca sequelize como **ORM** executando consultas através de funções pré-definidas na biblioteca.
 
 ## Clonando o Projeto
 Para executar qualquer uma das versões da API é só clonar o projeto e dentro do diretório e executar os seguintes comandos.
