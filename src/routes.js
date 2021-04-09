@@ -10,5 +10,7 @@ router.get("/agendamentos", Agendamentos.index);
 router.get("/agendamentos/:id", Agendamentos.show);
 
 router.post("/agendamentos", Agendamentos.create);
+router.put("/agendamentos/:id", Agendamentos.update);
+router.delete("/agendamentos/:id", Agendamentos.delete);
 
 module.exports = router;
