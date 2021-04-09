@@ -25,7 +25,7 @@ class Scheduling {
           message: `Não foi localizado agendamento com o id ${id}`,
         });
 
-      return res.json({ success: true, scheduling: results });
+      return res.json({ success: true, scheduling: results[0] });
     });
   }
 
